@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>The Green House — Attendance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>The Green House</h1>
+    <span class="term-label">Term 1</span>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-view="mark">Mark</button>
+    <button class="tab-btn" data-view="grid">Grid</button>
+    <button class="tab-btn" data-view="totals">Totals</button>
+    <button class="tab-btn" data-view="students">Students</button>
+  </nav>
+
+  <main id="app">
+    <div id="status-banner" class="status-banner hidden"></div>
+
+    <section id="view-mark" class="view active">
+      <div class="date-row">
+        <label for="mark-date">Date</label>
+        <input type="date" id="mark-date">
+      </div>
+      <ul id="mark-list" class="mark-list"></ul>
+    </section>
+
+    <section id="view-grid" class="view">
+      <div id="grid-wrap" class="grid-wrap"></div>
+    </section>
+
+    <section id="view-totals" class="view">
+      <div id="totals-wrap"></div>
+    </section>
+
+    <section id="view-students" class="view">
+      <ul id="students-list" class="students-list"></ul>
+      <form id="add-student-form" class="add-student-form">
+        <input type="text" id="new-name" placeholder="Full name" required>
+        <select id="new-class">
+          <option>S1</option><option>S2</option><option>S3</option>
+          <option>S4</option><option>S5</option><option>S6</option>
+        </select>
+        <button type="submit">Add student</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

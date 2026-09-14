@@ -1,0 +1,9 @@
+{
+  "name": "green-house-attendance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Attendance tracker for The Green House",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}
